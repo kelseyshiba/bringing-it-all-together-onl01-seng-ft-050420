@@ -56,7 +56,7 @@ class Dog
       dog_data = dog[0]
       dog = Dog.new(id: dog_data[0], name: dog_data[1], breed: dog_data[2])
     else
-      Dog.create(name:, breed:)
+      Dog.create(name: name, breed: breed)
     end
   end
   #   def self.find_or_create_by(name:, album:)
