@@ -30,6 +30,7 @@ class Dog
   def save
     sql = "INSERT INTO dogs (name, breed) VALUES (?, ?)"
     result = DB[:conn].execute(sql, self.name, self.breed)
+    binding.pry
     @id = DB[:conn].execute("SELECT last_insert_rowid()")[0][0]
   end
   
