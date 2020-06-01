@@ -34,4 +34,8 @@ class Dog
     Dog.new(id: @id, name: result[0], breed: result[1])
   end
   
+  def self.create 
+    
+  end
+  
 end
